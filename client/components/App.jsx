@@ -1,8 +1,23 @@
-import React from 'react'
+import React from "react"
 
-const App = () => {
+import Row from "react-bootstrap/Row"
+import Col from "react-bootstrap/Col"
+
+import Info from "./Info"
+import Main from "./Main"
+
+function App() {
   return (
-    <h1>React development has begun!</h1>
+    <>
+      <Row>
+        <Col style={{ backgroundColor: "#202326", height: "100vh" }}>
+          <Info />
+        </Col>
+        <Col style={{ backgroundColor: "#3D4146", height: "100vh" }}>
+          <Main />
+        </Col>
+      </Row>
+    </>
   )
 }
 
