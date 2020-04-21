@@ -28,7 +28,7 @@ const Main = () => {
   return (
     <div className="work h-100" style={{ "overflowY": "scroll" }}>
       <div className="overflow-auto my-5">
-          <Card className="mx-auto" style={{ width: "18rem" }}>
+          <Card className="mx-auto" style={{ width: "25rem" }}>
             <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
             <Card.Body>
               <Card.Title>Sample</Card.Title>
@@ -42,7 +42,7 @@ const Main = () => {
             </Card.Body>
           </Card>
           <br />
-          <Card className="mx-auto" style={{ width: "18rem" }}>
+          <Card className="mx-auto" style={{ width: "25rem" }}>
             <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
             <Card.Body>
               <Card.Title>Sample</Card.Title>
@@ -56,7 +56,7 @@ const Main = () => {
             </Card.Body>
           </Card>
           <br />
-          <Card className="mx-auto" style={{ width: "18rem" }}>
+          <Card className="mx-auto" style={{ width: "25rem" }}>
             <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
             <Card.Body>
               <Card.Title>Sample</Card.Title>

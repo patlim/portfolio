@@ -10,6 +10,7 @@ const Info = () => {
         {" "}
         <h1 className="text-muted mb-0">Patrick Lim</h1>
         <h3 className="text-dark">Full Stack Web Developer</h3>
+        <p className="text-dark">Full Stack Web Developer</p>
         <div className="m-2">
           <a href="https://github.com/patlim"><img className="m-1" src="/github.png" style={{ width: "30px" }}/></a>
           <a href="https://www.linkedin.com/in/nzplim/"><img className="m-1" src="/linkedin.png" style={{ width: "30px" }}/></a>
