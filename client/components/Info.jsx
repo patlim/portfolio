@@ -6,18 +6,17 @@ const Info = () => {
   return (
     <div className="info affix d-flex h-100">
       <div className="align-self-center text-white mx-auto">
-        <Image style={{ width: "100px" }} src="/headshot.jpg" roundedCircle />
+        <Image style={{ width: "80px" }} src="/headshot.jpg" roundedCircle />
         {" "}
         <h1 className="text-muted mb-0">Patrick Lim</h1>
-        <h3 className="text-dark">Full Stack Web Developer</h3>
         <p className="text-dark">Full Stack Web Developer</p>
-        <div className="m-2">
-          <a href="https://github.com/patlim"><img className="m-1" src="/github.png" style={{ width: "30px" }}/></a>
-          <a href="https://www.linkedin.com/in/nzplim/"><img className="m-1" src="/linkedin.png" style={{ width: "30px" }}/></a>
-          <a href="https://www.behance.net/patlim"><img className="m-1" src="/behance.png" style={{ width: "30px" }}/></a>
-          <a href="mailto:impatlim@gmail.com"><img className="m-1" src="/mail.png" style={{ width: "30px" }}/></a>
-          <a href="/cv.pdf"><img className="m-1" src="/resume.png" style={{ width: "30px" }}/></a>
+        <div className="iconContainer m-2">
+          <a href="https://github.com/patlim"><i className="icon text-muted fab fa-lg fa-github"></i></a>{"  "}
+          <a href="https://www.linkedin.com/in/nzplim/"><i className="icon text-muted fab fa-lg fa-linkedin"></i></a>{"  "}
+          <a href="https://www.behance.net/patlim"><i className="icon text-muted fab fa-lg fa-behance-square"></i></a>{"  "}
+          <a href="mailto:impatlim@gmail.com"><i className="icon text-muted far fa-lg fa-envelope"></i></a>
         </div>
+        <a href="/cv.pdf">View resume</a>
       </div>
     </div>
   )

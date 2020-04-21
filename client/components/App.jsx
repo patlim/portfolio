@@ -10,10 +10,10 @@ function App() {
   return (
     <>
       <Row>
-        <Col style={{ backgroundColor: "#202326", height: "100vh" }}>
+        <Col sm={5} style={{ backgroundColor: "#202326", height: "100vh" }}>
           <Info />
         </Col>
-        <Col style={{ backgroundColor: "#3D4146", height: "100vh" }}>
+        <Col sm={7} style={{ backgroundColor: "#3D4146", height: "100vh" }}>
           <Main />
         </Col>
       </Row>

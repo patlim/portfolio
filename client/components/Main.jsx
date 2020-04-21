@@ -5,6 +5,8 @@ import Button from "react-bootstrap/Button"
 import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container"
 
+import Skills from './Skills'
+
 const works = [
   {
     id: 0,
@@ -28,7 +30,7 @@ const Main = () => {
   return (
     <div className="work h-100" style={{ "overflowY": "scroll" }}>
       <div className="overflow-auto my-5">
-          <Card className="mx-auto" style={{ width: "25rem" }}>
+          <Card className="mx-auto" border="dark" style={{ width: "25rem" }}>
             <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
             <Card.Body>
               <Card.Title>Sample</Card.Title>
@@ -42,7 +44,7 @@ const Main = () => {
             </Card.Body>
           </Card>
           <br />
-          <Card className="mx-auto" style={{ width: "25rem" }}>
+          <Card className="mx-auto" border="dark" style={{ width: "25rem" }}>
             <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
             <Card.Body>
               <Card.Title>Sample</Card.Title>
@@ -56,7 +58,7 @@ const Main = () => {
             </Card.Body>
           </Card>
           <br />
-          <Card className="mx-auto" style={{ width: "25rem" }}>
+          <Card className="mx-auto" border="dark" style={{ width: "25rem" }}>
             <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
             <Card.Body>
               <Card.Title>Sample</Card.Title>
@@ -69,6 +71,7 @@ const Main = () => {
               </Button>
             </Card.Body>
           </Card>
+          <Skills />
       </div>
     </div>
   )
