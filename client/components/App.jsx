@@ -5,11 +5,12 @@ import Col from "react-bootstrap/Col"
 
 import Info from "./Info"
 import Main from "./Main"
-
+import Nav from "./Nav"
 
 function App() {
   return (
     <>
+      <Nav />
       <Row>
         <Col sm={5} style={{ backgroundColor: "#202326", height: "100vh" }}>
           <Info />

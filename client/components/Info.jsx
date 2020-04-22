@@ -8,8 +8,8 @@ const Info = () => {
       <div className="align-self-center text-white mx-auto">
         {/* <Image style={{ width: "80px" }} src="/headshot.jpg" roundedCircle /> */}
         {" "}
-        <h1 className="text-white mb-0">Patrick Lim</h1>
-        <p className="text-muted">Full Stack Web Developer</p>
+        <h1 className="mb-0">Patrick Lim</h1>
+        <p >Full Stack Web Developer</p>
         <div className="iconContainer">
           <a className="pr-1" href="https://github.com/patlim" target="_blank"><i className="icon text-muted fab fa-2x fa-github"></i></a>{"  "}
           <a className="px-1" href="https://www.linkedin.com/in/nzplim/" target="_blank"><i className="icon text-muted fab fa-2x fa-linkedin"></i></a>{"  "}
