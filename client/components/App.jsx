@@ -6,6 +6,7 @@ import Col from "react-bootstrap/Col"
 import Info from "./Info"
 import Main from "./Main"
 
+
 function App() {
   return (
     <>

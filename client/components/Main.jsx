@@ -2,77 +2,36 @@ import React from "react"
 
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
-import Row from "react-bootstrap/Row"
-import Container from "react-bootstrap/Container"
 
-import Skills from './Skills'
-
-const works = [
-  {
-    id: 0,
-    title: "demo",
-    desc: "demo-desc",
-    img: "/",
-    link: "/",
-    github: "/",
-  },
-  {
-    id: 1,
-    title: "demo2",
-    desc: "demo-desc2",
-    img: "/",
-    link: "/",
-    github: "/",
-  },
-]
-
+import { works } from "../../data/works"
+import Skills from "./Skills"
+import Education from "./Education"
+  
 const Main = () => {
   return (
-    <div className="work h-100" style={{ "overflowY": "scroll" }}>
+    <div className="work h-100" style={{ overflowY: "scroll" }}>
       <div className="overflow-auto my-5">
-          <Card className="mx-auto" border="dark" style={{ width: "25rem" }}>
-            <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
-            <Card.Body>
-              <Card.Title>Sample</Card.Title>
-              <Card.Text>Description</Card.Text>
-              <Button variant="primary" size="sm" href="demolink">
-                Demo
-              </Button>{" "}
-              <Button variant="secondary" size="sm" href="githubLink">
-                Github
-              </Button>
-            </Card.Body>
-          </Card>
-          <br />
-          <Card className="mx-auto" border="dark" style={{ width: "25rem" }}>
-            <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
-            <Card.Body>
-              <Card.Title>Sample</Card.Title>
-              <Card.Text>Description</Card.Text>
-              <Button variant="primary" size="sm" href="demolink">
-                Demo
-              </Button>{" "}
-              <Button variant="secondary" size="sm" href="githubLink">
-                Github
-              </Button>
-            </Card.Body>
-          </Card>
-          <br />
-          <Card className="mx-auto" border="dark" style={{ width: "25rem" }}>
-            <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
-            <Card.Body>
-              <Card.Title>Sample</Card.Title>
-              <Card.Text>Description</Card.Text>
-              <Button variant="primary" size="sm" href="demolink">
-                Demo
-              </Button>{" "}
-              <Button variant="secondary" size="sm" href="githubLink">
-                Github
-              </Button>
-            </Card.Body>
-          </Card>
-          <Skills />
+        {works.map((work) => {
+          return (
+            <Card className="mx-auto mb-5" key={work.id} border="dark" style={{ width: "25rem" }}>
+              <Card.Img variant="top" src="https://placeimg.com/300/150/any" />
+              <Card.Body>
+                <Card.Title>{work.title}</Card.Title>
+                <Card.Text>{work.desc}</Card.Text>
+                <Button variant="primary" size="sm" href={work.demoLink}>
+                  Demo
+                </Button>{" "}
+                <Button variant="secondary" size="sm" href={work.githubLink}>
+                  Github
+                </Button>
+              </Card.Body>
+            </Card>
+          )
+        })}
+        <br />
       </div>
+      <Skills />
+      <Education />
     </div>
   )
 }
