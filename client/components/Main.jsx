@@ -4,8 +4,7 @@ import request from "superagent";
 import Card from "react-bootstrap/Card"
 import Button from "react-bootstrap/Button"
 
-import Skills from "./Skills"
-import Education from "./Education"
+import Attributes from "./Attributes"
 
 const githubApi = 'https://api.github.com/users/patlim/repos'
 class Main extends React.Component {
@@ -20,27 +19,26 @@ class Main extends React.Component {
 
   render() {
     return (
-      <div className="work h-100" style={{ overflowY: "scroll", scrollBehavior: 'smooth'}}>
+      <div className="work h-100" style={{overflowY: "scroll", scrollBehavior: 'smooth'}}>
         <div className="overflow-auto my-5" id="projects">
           {this.state.works.map((work) => {
             return (
               <Card
-                className="mx-auto mb-5"
+                className="mx-auto mb-5 border-0 text-white"
                 key={work.id}
-                border="dark"
-                style={{ width: "25rem" }}
+                style={{ width: "30rem", backgroundColor:'#2A424D' }}
               >
                 <Card.Img
                   variant="top"
-                  src="https://placeimg.com/300/150/any"
+                  src="https://placeimg.com/450/150/any"
                 />
                 <Card.Body>
                   <Card.Title>{work.name}</Card.Title>
                   <Card.Text>{work.description}</Card.Text>
-                  <Button variant="primary" size="sm" target="_blank" href='#'>
+                  <Button className="btn-block" variant="primary" size="sm" target="_blank" href='#'>
                     Demo
                   </Button>{" "}
-                  <Button variant="secondary" size="sm" target="_blank" href={work.html_url}>
+                  <Button className="btn-block" variant="secondary" size="sm" target="_blank" href={work.html_url}>
                     Github
                   </Button>
                 </Card.Body>
@@ -49,8 +47,7 @@ class Main extends React.Component {
           })}
           <br />
         </div>
-        <Skills />
-        <Education />
+        <Attributes />
       </div>
     )
   }
