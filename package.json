@@ -16,7 +16,8 @@
     "build": "webpack",
     "server": "node server",
     "test": "jest --watchAll",
-    "deploy": "gh-pages -d server"
+    "deploy": "gh-pages -d server",
+    "heroku-postbuild": "npm run build"
   },
   "babel": {
     "presets": [
